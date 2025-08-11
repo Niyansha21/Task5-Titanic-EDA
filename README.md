@@ -9,7 +9,6 @@ The analysis is based on the dataset `tested.csv` from [Kaggle's Titanic Dataset
 - **Script.py** – Python script that loads the dataset, processes it, and generates visualizations.  
 - **tested.csv** – Dataset used for analysis (from Kaggle).  
 - **titanic_visual_analysis.pdf** – Full PDF report containing visuals and insights.  
-- **images/** – PNG versions of all charts used in the PDF (optional if stored).  
 
 ## 📊 Report Contents
 1. **Introduction Page** – Purpose of the report and summary of the analysis.  
@@ -45,16 +44,5 @@ The analysis is based on the dataset `tested.csv` from [Kaggle's Titanic Dataset
 **Niyansha Dubey**
 
 ---
-📢 *Feel free to fork this repository, explore the visuals, or use the analysis as a reference for your own projects.*
 
 
-
-
-
-
-
-
-
-
-
-Ask ChatGPT
