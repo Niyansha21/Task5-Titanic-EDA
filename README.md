@@ -3,7 +3,7 @@
 ## 📌 Overview
 This repository contains a **visual exploratory data analysis (EDA)** of the Titanic dataset, prepared by **Niyansha Dubey**.  
 It explores relationships between passenger characteristics and survival outcomes using multiple visualizations, with detailed insights provided for each plot.  
-The analysis is based on the dataset `tested.csv` from [Kaggle's Titanic Dataset](https://www.kaggle.com/c/titanic/data).
+The analysis is based on the dataset `tested.csv` from [Kaggle's Titanic Dataset](https://www.kaggle.com/datasets/brendan45774/test-file).
 
 ## 📂 Repository Structure
 - **Script.py** – Python script that loads the dataset, processes it, and generates visualizations.  
@@ -38,8 +38,8 @@ The analysis is based on the dataset `tested.csv` from [Kaggle's Titanic Dataset
   5. Compile visuals and explanations into a PDF using ReportLab.  
 
 ## 📄 Dataset Source
-- Dataset: [`tested.csv`](https://www.kaggle.com/c/titanic/data)  
-- Source: Kaggle Titanic Competition
+- Dataset: [`tested.csv`](https://www.kaggle.com/datasets/brendan45774/test-file)  
+- Source: [Kaggle Titanic Dataset](https://www.kaggle.com/datasets/brendan45774/test-file)
 
 ## 👩‍💻 Author
 **Niyansha Dubey**
@@ -47,28 +47,6 @@ The analysis is based on the dataset `tested.csv` from [Kaggle's Titanic Dataset
 ---
 📢 *Feel free to fork this repository, explore the visuals, or use the analysis as a reference for your own projects.*
 
-
-
-Libraries Used: Pandas, Matplotlib, Seaborn, ReportLab
-
-Process:
-
-Cleaned and encoded the dataset.
-
-Created visualizations using Matplotlib and Seaborn.
-
-Exported visuals to PNG format.
-
-Compiled all visuals into a professionally styled PDF report with ReportLab.
-
-📄 File Information
-File Name: titanic_visual_analysis.pdf
-
-Pages: 1 Introduction + 8 Visualization & Insight pages
-
-Format: PDF (A4 size)
-
-Author: Niyansha Dubey
 
 
 
