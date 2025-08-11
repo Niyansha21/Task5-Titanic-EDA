@@ -1,39 +1,53 @@
-Titanic Visual Analysis Report
+# Titanic Visual Analysis Report
 
-📌 Overview
-This document contains a visual exploratory data analysis (EDA) of the Titanic dataset, prepared by Niyansha Dubey.
-It presents multiple plots and charts to explore relationships between passenger characteristics and survival outcomes, with detailed insights provided for each visual.
+## 📌 Overview
+This repository contains a **visual exploratory data analysis (EDA)** of the Titanic dataset, prepared by **Niyansha Dubey**.  
+It explores relationships between passenger characteristics and survival outcomes using multiple visualizations, with detailed insights provided for each plot.  
+The analysis is based on the dataset `tested.csv` from [Kaggle's Titanic Dataset](https://www.kaggle.com/c/titanic/data).
 
-📂 Contents
-The report is structured as follows:
+## 📂 Repository Structure
+- **Script.py** – Python script that loads the dataset, processes it, and generates visualizations.  
+- **tested.csv** – Dataset used for analysis (from Kaggle).  
+- **titanic_visual_analysis.pdf** – Full PDF report containing visuals and insights.  
+- **images/** – PNG versions of all charts used in the PDF (optional if stored).  
 
-Introduction Page – Purpose of the report and a summary of the analysis approach.
+## 📊 Report Contents
+1. **Introduction Page** – Purpose of the report and summary of the analysis.  
+2. **Correlation Heatmap** – Shows linear relationships between encoded features.  
+3. **Boxplots** – Displays distributions and outliers for Age, Fare, SibSp, and Parch.  
+4. **Age Distribution by Sex and Survival** – Highlights gender-based survival differences across age groups.  
+5. **Fare Distribution by Class and Survival** – Shows how ticket price and passenger class impact survival.  
+6. **Histograms** – Frequency distributions of numeric features.  
+7. **Pairplot** – Multi-feature comparison with survival status highlighted.  
+8. **Scatter Plots** – Age vs Fare and Pclass vs Fare, both color-coded by survival status.  
 
-Correlation Heatmap – Displays linear relationships between encoded features.
+## 🔍 Key Insights
+- **Fare vs Class**: First-class passengers paid significantly more and had higher survival rates.  
+- **Gender Impact**: Female passengers had a much higher probability of survival compared to males.  
+- **Outliers**: Found in Fare, SibSp, and Parch, indicating unusual passenger cases.  
+- **Class Effect**: Passengers in lower classes generally had reduced survival chances.  
 
-Boxplots – Shows distributions and outliers for Age, Fare, SibSp, and Parch.
+## 🛠 How It Was Made
+- **Language**: Python  
+- **Libraries Used**: Pandas, Matplotlib, Seaborn, ReportLab  
+- **Process**:  
+  1. Load dataset (`tested.csv`) from Kaggle.  
+  2. Perform basic cleaning and encoding.  
+  3. Generate visualizations with Matplotlib & Seaborn.  
+  4. Export plots as PNG files.  
+  5. Compile visuals and explanations into a PDF using ReportLab.  
 
-Age Distribution by Sex and Survival – Highlights gender-based survival differences across age groups.
+## 📄 Dataset Source
+- Dataset: [`tested.csv`](https://www.kaggle.com/c/titanic/data)  
+- Source: Kaggle Titanic Competition
 
-Fare Distribution by Class and Survival – Shows how ticket price and passenger class impact survival rates.
+## 👩‍💻 Author
+**Niyansha Dubey**
 
-Histograms – Frequency distributions of numerical features.
+---
+📢 *Feel free to fork this repository, explore the visuals, or use the analysis as a reference for your own projects.*
 
-Pairplot – Multi-feature comparison with survival status highlighted.
 
-Scatter Plots – Age vs Fare and Pclass vs Fare, both color-coded by survival status.
-
-🔍 Key Insights
-Fare vs Class: First-class passengers paid significantly more and had notably higher survival rates.
-
-Gender Impact: Female passengers had a much higher probability of survival compared to males.
-
-Outliers: Detected in Fare, SibSp, and Parch, indicating unusual passenger cases.
-
-Class Effect: Passengers in lower classes generally had reduced survival chances.
-
-🛠 How It Was Made
-Language: Python
 
 Libraries Used: Pandas, Matplotlib, Seaborn, ReportLab
 
