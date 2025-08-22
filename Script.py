@@ -10,9 +10,9 @@ documents_path = os.path.join(os.path.expanduser("~"), "Documents", "Titanic_Vis
 os.makedirs(documents_path, exist_ok=True)
 
 # =======================
-# 1️⃣ Load Data
+# Load Data
 # =======================
-print("\n📂 STEP 1: Loading Dataset")
+print("\n STEP 1: Loading Dataset")
 df = pd.read_csv("tested.csv")
 
 print("\n=== Dataset Info ===")
@@ -26,7 +26,7 @@ df_encoded['Sex'] = df_encoded['Sex'].map({'male': 0, 'female': 1})
 df_encoded['Embarked'] = df_encoded['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
 
 # =======================
-# 2️⃣ Correlation Heatmap
+# Correlation Heatmap
 # =======================
 plt.figure(figsize=(8, 6))
 sns.heatmap(df_encoded.corr(numeric_only=True), annot=True, cmap='coolwarm')
@@ -36,7 +36,7 @@ plt.savefig(os.path.join(documents_path, "correlation_heatmap.png"))
 plt.show()
 
 # =======================
-# 3️⃣ Pairplot
+# Pairplot
 # =======================
 pairplot_fig = sns.pairplot(df, vars=['Age', 'Fare', 'Pclass', 'SibSp', 'Parch'], hue='Survived', diag_kind='kde')
 pairplot_fig.fig.suptitle("Pairplot of Key Features by Survival", y=1.02, fontsize=14, weight='bold')
@@ -44,7 +44,7 @@ pairplot_fig.savefig(os.path.join(documents_path, "pairplot.png"))
 plt.show()
 
 # =======================
-# 4️⃣ Histograms
+# Histograms
 # =======================
 numeric_cols = ['Age', 'Fare', 'SibSp', 'Parch']
 df[numeric_cols].hist(bins=20, figsize=(10, 8), edgecolor='black')
@@ -54,7 +54,7 @@ plt.savefig(os.path.join(documents_path, "histograms.png"))
 plt.show()
 
 # =======================
-# 5️⃣ Box Plots
+# Box Plots
 # =======================
 plt.figure(figsize=(10, 6))
 for i, col in enumerate(numeric_cols, 1):
@@ -66,7 +66,7 @@ plt.savefig(os.path.join(documents_path, "boxplots.png"))
 plt.show()
 
 # =======================
-# 6️⃣ Scatter Plots
+# Scatter Plots
 # =======================
 plt.figure(figsize=(10, 6))
 sns.scatterplot(data=df, x='Age', y='Fare', hue='Survived', palette='coolwarm')
@@ -83,7 +83,7 @@ plt.savefig(os.path.join(documents_path, "scatter_pclass_fare.png"))
 plt.show()
 
 # =======================
-# 7️⃣ Grouped Box Plots
+# Grouped Box Plots
 # =======================
 plt.figure(figsize=(8, 6))
 sns.boxplot(data=df, x='Sex', y='Age', hue='Survived')
@@ -99,5 +99,6 @@ plt.tight_layout()
 plt.savefig(os.path.join(documents_path, "groupedbox_fare_class_survival.png"))
 plt.show()
 
-print(f"\n✅ All visuals saved in: { r"C:\Users\dell\Documents"}")
+print(f"\n All visuals saved in: { r"C:\Users\dell\Documents"}")
+
 
