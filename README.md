@@ -28,7 +28,7 @@ The analysis is based on the dataset `tested.csv` from [Kaggle's Titanic Dataset
 
 ## 🛠 How It Was Made
 - **Language**: Python  
-- **Libraries Used**: Pandas, Matplotlib, Seaborn, ReportLab  
+- **Libraries Used**: Pandas, Matplotlib, Seaborn.  
 - **Process**:  
   1. Load dataset (`tested.csv`) from Kaggle.  
   2. Perform basic cleaning and encoding.  
